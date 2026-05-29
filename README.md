@@ -80,4 +80,46 @@ ________________________________________________________________________________
   * Busca el DAG flights_ops_medallion_pipe.
   * Haz clic en "Trigger DAG" para ver el flujo completo en acción.
 
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+## 🔥 DESARROLLO DEL PROYECTO PASO A PASO (Guia Practica) 🔥
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. Creamos las carpetas del proyecto la cual la llamaremos Flight-ops-airflow y sus subcarpetas data, scripts y, sql. Asimismo, en la carpeta data creamos las carpetas de la arquitectura medallón, las cuales son bronce, silver y, Gold.
+
+2. Abrimos nuestro Docker desktop y luego nuestro editor de código, en este caso, Visual Studio Code, en el cual, enlazaremos nuestra carpeta flight-ops-airflow.
+   
+3. En VSCode creamos un archivo Docker-compose.yaml e ingresamos el siguiente código para que pueda conectar el código con Docker.
+
+   Código: []() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
