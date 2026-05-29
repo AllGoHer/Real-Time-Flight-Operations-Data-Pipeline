@@ -43,9 +43,7 @@ ________________________________________________________________________________
    ▼
 📈 [Power BI / Tableau] (Consumo para paneles de negocio)
 
-
-
----
+------------------------------------------------------------------------------------------------------------------
 
   ┌─────────────┐      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
   │ 🌐 OpenSky  │      │ 📦 BRONZE   │      │ 🧹 SILVER   │      │ 📊 GOLD     │      │ ❄️ Snowflake│
@@ -57,6 +55,15 @@ ________________________________________________________________________________
                                                                                     │ 📈 Power BI │
                                                                                     │  Dashboards │
                                                                                     └─────────────┘
+
+------------------------------------------------------------------------------------------------------------------
+
+🏗️ Arquitectura del Pipeline (Data Flow)
+graph LR    A[🌐 OpenSky API] -->|Extracción cada 30 min| B[📦 Bronze Layer<br/>Raw JSON]    B -->|Limpieza de datos| C[🧹 Silver Layer<br/>Clean CSV]    C -->|Agregación por país| D[📊 Gold Layer<br/>KPIs CSV]    D -->|Upsert / MERGE| E[❄️ Snowflake DWH]    E -->|Consultas SQL| F[📈 Power BI / Tableau]        style A fill:#f9f9f9,stroke:#333,stroke-width:2px    style E fill:#29B5E8,stroke:#333,stroke-width:2px,color:#fff
+
+
+
+
 
 
 ![image]()
