@@ -48,32 +48,36 @@ ________________________________________________________________________________
 
 El resultado final de este pipeline es una tabla de KPIs lista para análisis. Ejemplo de un snapshot agregado por país:
 
-origin_country
-total_flights
-avg_velocity
-on_ground
-United States	5777	137.69	608
-Canada	467	135.05	96
-Australia	316	113.60	84
-United Kingdom	231	191.35	22
-Brazil	120	174.49	9
+![image](https://github.com/user-attachments/assets/83e7be38-b98c-4cda-9a07-2c9db3e24e15)
 
 (Estos datos son actualizados incrementalmente en Snowflake cada 30 minutos con la ventana de tiempo exacta de ejecución).
 
-![image]()
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+## 🚀 Cómo ejecutar este proyecto localmente
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-![image]()
+* **Prerrequisitos:** Tener Docker y Docker Compose instalados.
 
-![image]()
+**1. Clonar el repositorio:**
 
-![image]()
+ bash:
 
-![image]()
+       git clone https://github.com/TU_USUARIO/flight-ops-airflow.git
+       cd flight-ops-airflow
 
-![image]()
 
-![image]()
+**2. Configurar credenciales de Snowflake (Opcional - Solo para la capa Gold):**
+  * Si deseas ejecutar la carga a Snowflake, crea una conexión en la UI de Airflow (Admin -> Connections) llamada flight_snowflake con tus credenciales y el JSON extra con account, warehouse, database, y role.
 
-![image]()
+**3. Levantar el entorno con Docker Compose:**
 
-![image]()
+ bash:
+
+       docker-compose up -d
+
+**4. Acceder a Airflow y disparar el DAG:**
+  * Abre tu navegador en http://localhost:8080 (User: airflow / Pass: airflow).
+  * Busca el DAG flights_ops_medallion_pipe.
+  * Haz clic en "Trigger DAG" para ver el flujo completo en acción.
+
+
