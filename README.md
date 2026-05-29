@@ -159,12 +159,23 @@ Creamos el archivo silver_transform.py e ingresamos el siguiente código.
 
 Código: [silver_transform.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/silver_transform.py)
 
+* ahora verificamos que todo este conforme en el proceso de transformación de datos, yendo al IU de Airflow(localhost:8080).
 
-   ![image]()
+  ![image](https://github.com/user-attachments/assets/74c1d45f-853c-49f1-bbe1-8065a03288b9)
 
-   ![image]()
+* Y también verificamos en nuestro editor de código VSC, en la carpeta data y dentro del carpeta silver ya se encuentre el archivo de datos csv.
+  
+   ![image](https://github.com/user-attachments/assets/5218a9f9-675b-40cb-aa0f-f44bbb5151a9)
 
-   ![image]()
+   ![image](https://github.com/user-attachments/assets/36932ba9-55d7-488c-abb4-0d86358b9b2e)
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+### ![image](https://github.com/user-attachments/assets/1598351b-2a03-4fd9-a1ed-ed366a3f102c) Medallón de Oro 
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Ahora creamos la carpeta gold_aggregate.py y ingresamos el siguiente código.
+
+Código: [gold_aggregate.py]()
 
    ![image]()
 
