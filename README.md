@@ -62,7 +62,7 @@ ________________________________________________________________________________
 
  bash:
 
-       git clone https://github.com/TU_USUARIO/flight-ops-airflow.git
+       git clone https://github.com/AllGoHer/flight-ops-airflow.git
        cd flight-ops-airflow
 
 
