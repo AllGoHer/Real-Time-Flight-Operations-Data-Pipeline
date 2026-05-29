@@ -142,20 +142,22 @@ Código: [bronze_ingest.py](https://github.com/AllGoHer/Real-Time-Flight-Operati
 
 * Luego de guardar los dos archivos, vamos a la IU de Airflow (localhost:8080) para verificar la ingestión de datos.
 
-          ![image](https://github.com/user-attachments/assets/edae5f1e-080d-4138-8f82-bb284fe7166a)
+   ![image](https://github.com/user-attachments/assets/edae5f1e-080d-4138-8f82-bb284fe7166a)
 
-          ![image](https://github.com/user-attachments/assets/ab9afb99-58a3-44a2-9743-bd920e5d5817)
+   ![image](https://github.com/user-attachments/assets/ab9afb99-58a3-44a2-9743-bd920e5d5817)
 
   Y también verificamos en visual studio code que se haya guardado los datos automáticamente.
 
 
      ![image](https://github.com/user-attachments/assets/5819f1de-20aa-4827-ae27-9987e87b1090)
 
+________________________________________________________________________________________________________________________________________________________________________________________________________________
 ### ![image](https://github.com/user-attachments/assets/909edaf5-0063-4d28-a4c8-d96eafcb3665) Medallón de Plata – Transformación de datos.
+________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Creamos el archivo silver_transform.py e ingresamos el siguiente código.
 
-Código: [silver_transform.py]()
+Código: [silver_transform.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/silver_transform.py)
 
 
    ![image]()
