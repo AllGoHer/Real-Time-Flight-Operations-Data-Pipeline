@@ -39,52 +39,26 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ## 📂 Estructura del Proyecto.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
-Estructura:
-           .
-           
-           ├── dags/
-           
-           │   └── flight-pipeline.py         # Definición del DAG y orquestación
-           
-           ├── scripts/
-           
-           │   ├── bronze_ingest.py           # Extracción API -> JSON
-           
-           │   ├── silver_transform.py        # Limpieza JSON -> CSV
-           
-           │   ├── gold_aggregate.py          # Agregación CSV -> KPIs CSV
-           
-           │   └── load_gold_to_snowflake.py  # Carga KPIs -> Snowflake (MERGE)
-           
-           ├── data/                          # (Generado dinámicamente por Airflow)
-           
-           │   ├── bronze/
-           
-           │   ├── silver/
-           
-           │   └── gold/
-           
-           ├── requirements.txt
-           
-           └── README.md
-
-
-.
-├── dags/
-│   └── flight-pipeline.py       # Definición del DAG y orquestación
-├── scripts/
-│   ├── bronze_ingest.py         # Extracción API -> JSON
-│   ├── silver_transform.py      # Limpieza JSON -> CSV
-│   ├── gold_aggregate.py        # Agregación CSV -> KPIs CSV
-│   └── load_gold_to_snowflake.py # Carga KPIs -> Snowflake (MERGE)
-├── data/                        # (Generado dinámicamente por Airflow)
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-├── requirements.txt
-└── README.md
 
 ![image](https://github.com/user-attachments/assets/7920af67-dbd9-45ec-a3af-225de0bd0b32)
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+## 📊 Vista de los Datos (Gold Layer Output)
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+El resultado final de este pipeline es una tabla de KPIs lista para análisis. Ejemplo de un snapshot agregado por país:
+
+origin_country
+total_flights
+avg_velocity
+on_ground
+United States	5777	137.69	608
+Canada	467	135.05	96
+Australia	316	113.60	84
+United Kingdom	231	191.35	22
+Brazil	120	174.49	9
+
+(Estos datos son actualizados incrementalmente en Snowflake cada 30 minutos con la ventana de tiempo exacta de ejecución).
 
 ![image]()
 
