@@ -128,7 +128,7 @@ ________________________________________________________________________________
 
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
-### ![image](https://github.com/user-attachments/assets/4825147e-660a-480e-96fa-079b9b03f485) Medallón de bronce – ingesta de datos.
+### ![image](https://github.com/user-attachments/assets/4825147e-660a-480e-96fa-079b9b03f485) Capa Bronce – ingesta de datos.
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 * Ahora en el archivo scripts del VSC, creamos el archivo bronze_ingest.py con el siguiente código.
@@ -152,7 +152,7 @@ ________________________________________________________________________________
      ![image](https://github.com/user-attachments/assets/5819f1de-20aa-4827-ae27-9987e87b1090)
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
-### ![image](https://github.com/user-attachments/assets/909edaf5-0063-4d28-a4c8-d96eafcb3665) Medallón de Plata – Transformación de datos.
+### ![image](https://github.com/user-attachments/assets/909edaf5-0063-4d28-a4c8-d96eafcb3665) Capa Plata – Transformación de datos.
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Creamos el archivo silver_transform.py e ingresamos el siguiente código.
@@ -170,15 +170,45 @@ Código: [silver_transform.py](https://github.com/AllGoHer/Real-Time-Flight-Oper
    ![image](https://github.com/user-attachments/assets/36932ba9-55d7-488c-abb4-0d86358b9b2e)
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
-### ![image](https://github.com/user-attachments/assets/1598351b-2a03-4fd9-a1ed-ed366a3f102c) Medallón de Oro 
+### ![image](https://github.com/user-attachments/assets/1598351b-2a03-4fd9-a1ed-ed366a3f102c) Capa Oro 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Ahora creamos la carpeta gold_aggregate.py y ingresamos el siguiente código.
+* Ahora creamos la carpeta gold_aggregate.py y ingresamos el siguiente código.
 
-Código: [gold_aggregate.py]()
+Código: [gold_aggregate.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/gold_aggregate.py)
 
-   ![image]()
+* guardamos el archivo y nos vamos al localhost:8080 y ejecutamos tigger o play de Airflow UI 
 
+   ![image](https://github.com/user-attachments/assets/bc4229ce-2a72-4d81-9f7f-6fb448e3ebff)
+
+
+  Y luego verificamos en VSC si ya se creó el archivo csv en el archivo gold.
+
+  ![image](https://github.com/user-attachments/assets/78368a21-a88f-448d-8d1b-77e99fae7d5e)
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+### ![image](https://github.com/user-attachments/assets/46d17126-ad57-4be4-a792-8097d317bfa6) WAREHOUSE LOAD
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+  ![image]()
+
+  ![image]()
+
+  
+![image]()
+
+![image]()
+
+  ![image]()
+
+  ![image]()
+
+  ![image]()
+
+  ![image]()
+
+  ![image]()
 
 
 
