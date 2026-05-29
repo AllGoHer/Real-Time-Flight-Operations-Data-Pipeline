@@ -29,7 +29,7 @@ ________________________________________________________________________________
   * Gestión dinámica de directorios y particiones basadas en execution_date.
 * **Código Modular:** Separación total entre la definición del DAG (flight-pipeline.py) y la lógica de negocio (scripts/), facilitando el testing unitario y el mantenimiento.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 * **Orquestación:** Apache Airflow (Docker Compose)
 * **Procesamiento:** Python, Pandas.
@@ -37,22 +37,35 @@ ________________________________________________________________________________
 * **Integración:** REST API, snowflake-connector-python, Airflow BaseHook.
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
-📂 Estructura del Proyecto.
+## 📂 Estructura del Proyecto.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Estructura:
            .
+           
            ├── dags/
+           
            │   └── flight-pipeline.py         # Definición del DAG y orquestación
+           
            ├── scripts/
+           
            │   ├── bronze_ingest.py           # Extracción API -> JSON
+           
            │   ├── silver_transform.py        # Limpieza JSON -> CSV
+           
            │   ├── gold_aggregate.py          # Agregación CSV -> KPIs CSV
+           
            │   └── load_gold_to_snowflake.py  # Carga KPIs -> Snowflake (MERGE)
+           
            ├── data/                          # (Generado dinámicamente por Airflow)
+           
            │   ├── bronze/
+           
            │   ├── silver/
+           
            │   └── gold/
+           
            ├── requirements.txt
+           
            └── README.md
 
 
