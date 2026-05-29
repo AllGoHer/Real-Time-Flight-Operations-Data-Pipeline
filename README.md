@@ -92,6 +92,48 @@ ________________________________________________________________________________
 
    Código: [Docker-compose.yaml](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/docker-compose.yaml) 
 
+4. Ahora en la terminal levantamos Docker-compose
+
+    Terminal:
+
+              Cd flight-ops-airflow
+
+    Terminal:
+
+              docker-compose up –build
+
+
+   ![image](https://github.com/user-attachments/assets/d392562c-28e1-4314-ade6-1da792205167)
+
+  Y luego podemos ver en Docker desktop en la pestaña containers la creación del container.
+  
+   ![image](https://github.com/user-attachments/assets/32fbda83-e9e5-485f-9265-fa6ae551ff7c)
+
+5. Ahora verificamos la conexión al puerto (loclahost:8080) haciendo click en 8080:8080 de Docker desktop.
+   
+   ![image](https://github.com/user-attachments/assets/428dc4e6-0147-46ad-b48c-b786397e1aca)
+
+   Luego ingresamos nuestra contraseña y nos mostrará la UI
+   
+   ![image](https://github.com/user-attachments/assets/86a1d06e-e70c-45bd-872b-d7bf18a926a0)
+
+### ![image](https://github.com/user-attachments/assets/4825147e-660a-480e-96fa-079b9b03f485) Medallón de bronce – ingesta de datos.
+
+   ![image]()
+
+   
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
 
 
 
