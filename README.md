@@ -79,7 +79,7 @@ Orquestación: Apache Airflow (Docker Compose)
 Procesamiento: Python, Pandas
 Almacenamiento de Datos (DWH): Snowflake
 Integración: REST API, snowflake-connector-python, Airflow BaseHook
-📂 Estructura del Proyecto
+📂 Estructura del Proyecto.
 
 
 
