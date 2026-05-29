@@ -90,7 +90,7 @@ ________________________________________________________________________________
    
 3. En VSCode creamos un archivo <mark>Docker-compose.yaml</mark> e ingresamos el siguiente código para que pueda conectar el código con Docker.
 
-       Código: [Docker-compose.yaml](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/docker-compose.yaml) 
+   Código: [Docker-compose.yaml](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/docker-compose.yaml) 
 
 
 4. Ahora en la terminal levantamos Docker-compose
@@ -104,7 +104,7 @@ ________________________________________________________________________________
               docker-compose up –build
 
 
-       ![image](https://github.com/user-attachments/assets/d392562c-28e1-4314-ade6-1da792205167)
+   ![image](https://github.com/user-attachments/assets/d392562c-28e1-4314-ade6-1da792205167)
 
  
   
@@ -133,7 +133,7 @@ ________________________________________________________________________________
 
 * Ahora en el archivo scripts del VSC, creamos el archivo bronze_ingest.py con el siguiente código.
 
-Código: [bronze_ingest.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/bronze_ingest.py)
+  Código: [bronze_ingest.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/bronze_ingest.py)
 
 
 * luego creamos otro archivo en la carpeta dags nombrándolo como flight-pipeline.py con el siguiente código.
