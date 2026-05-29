@@ -138,16 +138,25 @@ Código: [bronze_ingest.py](https://github.com/AllGoHer/Real-Time-Flight-Operati
 
 * luego creamos otro archivo en la carpeta dags nombrándolo como flight-pipeline.py con el siguiente código.
 
-   Código: [flight-pipeline.py]()
+   Código: [flight-pipeline.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/dags/flight-pipeline.py)
 
-        
+* Luego de guardar los dos archivos, vamos a la IU de Airflow (localhost:8080) para verificar la ingestión de datos.
 
-   ![image]()
+          ![image](https://github.com/user-attachments/assets/edae5f1e-080d-4138-8f82-bb284fe7166a)
 
-   
-   ![image]()
+          ![image](https://github.com/user-attachments/assets/ab9afb99-58a3-44a2-9743-bd920e5d5817)
 
-   ![image]()
+  Y también verificamos en visual studio code que se haya guardado los datos automáticamente.
+
+
+     ![image](https://github.com/user-attachments/assets/5819f1de-20aa-4827-ae27-9987e87b1090)
+
+### ![image](https://github.com/user-attachments/assets/909edaf5-0063-4d28-a4c8-d96eafcb3665) Medallón de Plata – Transformación de datos.
+
+Creamos el archivo silver_transform.py e ingresamos el siguiente código.
+
+Código: [silver_transform.py]()
+
 
    ![image]()
 
