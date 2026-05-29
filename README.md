@@ -131,9 +131,14 @@ ________________________________________________________________________________
 ### ![image](https://github.com/user-attachments/assets/4825147e-660a-480e-96fa-079b9b03f485) Medallón de bronce – ingesta de datos.
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Ahora en el archivo scripts del VSC, creamos el archivo bronze_ingest.py con el siguiente código.
+* Ahora en el archivo scripts del VSC, creamos el archivo bronze_ingest.py con el siguiente código.
 
-Código: [bronze_ingest.py]()
+Código: [bronze_ingest.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/bronze_ingest.py)
+
+
+* luego creamos otro archivo en la carpeta dags nombrándolo como flight-pipeline.py con el siguiente código.
+
+   Código: [flight-pipeline.py]()
 
         
 
