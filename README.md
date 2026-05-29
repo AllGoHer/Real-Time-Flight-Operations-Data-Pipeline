@@ -10,25 +10,6 @@ El objetivo de este proyecto es demostrar cómo se construye un flujo de datos c
 
 🏗️ Arquitectura del Pipeline (Data Flow)
 
-graph TD    API[🌐 OpenSky Network REST API] -->|Extracción cada 30 min| Airflow    
-subgraph "🛸 Apache Airflow Orchestrator"        direction TB        
-B[📦 BRONZE LAYER\nIngesta cruda de JSON]        
-S[🧹 SILVER LAYER\nLimpieza y normalización con Pandas]        
-G[📊 GOLD LAYER\nAgregación de KPIs por país]        
-L[❄️ LOAD\nLógica UPSERT / MERGE]               
-B --> S --> G --> L    end    Airflow --> B    
-L --> SF[❄️ Snowflake Data Cloud\nTabla: FLIGHTS_KPIS]    
-SF --> BI[📈 Power BI / Tableau\nDashboards de Negocio]
-
-
-
-
----
-
-### Opción 2: Diagrama de Texto Limpio y Alineado
-*Si prefieres no usar Mermaid y quieres algo que nunca se rompa sin importar qué editor abras el archivo, usa esta versión con caracteres de dibujo limpios.*
-
-Reemplaza la sección del diagrama por esto:
 
 ```markdown
 ### 🏗️ Arquitectura del Pipeline (Data Flow)
