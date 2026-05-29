@@ -7,16 +7,16 @@ ________________________________________________________________________________
 
 Pipeline de ingeniería de datos de extremo a extremo (End-to-End) diseñado para ingerir datos de vuelos en tiempo real desde la API pública de OpenSky Network.
 
-🎯 El objetivo de este proyecto es demostrar cómo se construye un flujo de datos casi en tiempo real (intervalos de 30 minutos) aplicando las mejores prácticas de la industria: Arquitectura Medallion (Bronze, Silver, Gold), procesamiento idempotente, orquestación robusta y carga incremental en un Data Warehouse (Snowflake) lista para ser consumida por herramientas de BI.
+🎯 **El objetivo** de este proyecto es demostrar cómo se construye un flujo de datos casi en tiempo real (intervalos de 30 minutos) aplicando las mejores prácticas de la industria: Arquitectura Medallion (Bronze, Silver, Gold), procesamiento idempotente, orquestación robusta y carga incremental en un Data Warehouse (Snowflake) lista para ser consumida por herramientas de BI.
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 🏗️ Arquitectura del Pipeline (Data Flow)
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ```markdown
-### 🏗️ Arquitectura del Pipeline (Data Flow)
+```
 
-```text
+
 🌐 [OpenSky Network REST API] (Datos de vuelos en tiempo real)
    │
    ▼ (Disparado cada 30 minutos)
