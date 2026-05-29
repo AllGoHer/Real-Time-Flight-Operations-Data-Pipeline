@@ -69,8 +69,22 @@ Estructura:
            └── README.md
 
 
+.
+├── dags/
+│   └── flight-pipeline.py       # Definición del DAG y orquestación
+├── scripts/
+│   ├── bronze_ingest.py         # Extracción API -> JSON
+│   ├── silver_transform.py      # Limpieza JSON -> CSV
+│   ├── gold_aggregate.py        # Agregación CSV -> KPIs CSV
+│   └── load_gold_to_snowflake.py # Carga KPIs -> Snowflake (MERGE)
+├── data/                        # (Generado dinámicamente por Airflow)
+│   ├── bronze/
+│   ├── silver/
+│   └── gold/
+├── requirements.txt
+└── README.md
 
-![image]()
+![image](https://github.com/user-attachments/assets/7920af67-dbd9-45ec-a3af-225de0bd0b32)
 
 ![image]()
 
