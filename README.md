@@ -296,11 +296,12 @@ ________________________________________________________________________________
  ## 🔍 Hallazgos y Conclusiones de Alto Impacto
  _______________________________________________________________________________________________________________________________________________________________________________________________________________
  
-**Hallazgo 1:** La asimetría absoluta del cielo (El monopolio estadounidense)
+☑️**Hallazgo 1:** La asimetría absoluta del cielo (El monopolio estadounidense)
 
-* **El dato:** Estados Unidos tiene casi 5,000 vuelos en una sola ventana de 30 minutos. El segundo lugar es Canadá con ~400. USA representa más del 60% del tráfico mundial monitoreado.
+**El dato:** Estados Unidos tiene casi 5,000 vuelos en una sola ventana de 30 minutos. El segundo lugar es Canadá con ~400. USA representa más del 60% del tráfico mundial monitoreado.
   
 **Conclusión de negocio:** Cualquier anomalía (tormenta, fallo de sistema, cierre de espacio aéreo) en EE. UU. tiene un impacto causal desproporcional en las operaciones globales de aerolíneas. Es el nodo central de la red mundial.
+
   
 **Hallazgo 2:** "Operational Friction" (Fricción Operativa) en países específicos
 
@@ -308,11 +309,13 @@ ________________________________________________________________________________
 
 **Conclusión de negocio:** El KPI "Vuelos en Tierra" no significa que los aviones estén estacionados en un hangar por la noche; significa que están en pista, taxiendo o retenidos. Un 100% de Ground Ops en una ventana de tiempo sugiere cuellos de botella de despegue, congestión terminal o bloqueos meteorológicos locales.
 
+
 **Hallazgo 3:** La velocidad como proxy del tipo de tráfico (Hub vs. Origins)
 
 **El dato:** Egipto (~296 km/h avg), Arabia Saudita (~251 km/h avg) y Rusia (~257 km/h avg) tienen las velocidades más altas. Ecuador (~3 km/h avg), Italia (~224 km/h avg en la segunda ventana) y Portugal tienen las más bajas.
 
 **Conclusión de negocio:** Velocidades altas indican "Cruising" (vuelos de larga distancia, intercontinentales). Velocidades bajas indican aviones en fases de aproximación, espera (holding patterns) o vuelos regionales cortos. Esto permite clasificar aeropuertos implícitamente como Hubs de conexión vs. Origines/destinos finales.
+
 
 **Hallazgo 4:** Caída abrupta del tráfico global
 
