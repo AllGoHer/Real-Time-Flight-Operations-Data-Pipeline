@@ -190,8 +190,48 @@ ________________________________________________________________________________
 ### ![image](https://github.com/user-attachments/assets/46d17126-ad57-4be4-a792-8097d317bfa6) WAREHOUSE LOAD
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+Crearemos en VSC un archivo llamado load_gold_to_snowflake con el siguiente código.
 
-  ![image]()
+Código:
+
+        import pandas pandas
+        import snowflake.connector
+        from airflow.hooks.base import BaseHook
+
+        def load_gold_to_snowflake(**context):
+            gold_file = context["ti"].xcom_pull(
+                key = "gold_file",
+                task_ids = "gold_aggregate"
+            )
+
+            if not gold_file:
+                raise ValueError("Gold file not found in xcom")
+    
+            execution_date = context["data_interval_start"],strftime("%Y%m%d-%H%M%S")
+
+           df = pd.read_csv(gold_file)
+
+        conn = BaseHook.get_connection("flight_snowflake")
+
+* luego abrimos snowflake y creamos la siguiente base de datos, esquema y, tabla FLIGHTS_KPIS.
+
+codigo:
+
+        CREATE DATABASE FLIGHTS
+        CREATE SCHEMA KPI;
+
+        CREATE TABLE FLIGHTS_KPIS (
+            WINDOW_START TIMESTAMP_NTZ,
+            ORIGIN_COUNTRY VARCHAR(50),
+            TOTAL_FLIGHTS INTEGER,
+            AVG_VELOCITY FLOAT,        
+            ON_GROUND INTEGER,
+            LOAD_TIME TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP(),
+            PRIMARY KEY (WINDOW_START, ORIGIN_COUNTRY)
+        );
+
+  
+  ![image](https://github.com/user-attachments/assets/326051d4-ede2-49be-836f-0d5d8b85b7ef)
 
   ![image]()
 
