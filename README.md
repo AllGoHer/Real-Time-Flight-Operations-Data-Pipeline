@@ -157,7 +157,7 @@ ________________________________________________________________________________
 
 Creamos el archivo silver_transform.py e ingresamos el siguiente código.
 
-Código: [silver_transform.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/silver_transform.py)
+ Código: [silver_transform.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/silver_transform.py)
 
 * ahora verificamos que todo este conforme en el proceso de transformación de datos, yendo al IU de Airflow(localhost:8080).
 
@@ -175,7 +175,7 @@ ________________________________________________________________________________
 
 * Ahora creamos la carpeta gold_aggregate.py y ingresamos el siguiente código.
 
-Código: [gold_aggregate.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/gold_aggregate.py)
+ Código: [gold_aggregate.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/gold_aggregate.py)
 
 * guardamos el archivo y nos vamos al localhost:8080 y ejecutamos tigger o play de Airflow UI 
 
@@ -233,28 +233,62 @@ codigo:
   
   ![image](https://github.com/user-attachments/assets/326051d4-ede2-49be-836f-0d5d8b85b7ef)
 
-  ![image]()
 
+ Verificamos que se haya creado la tabla en la pestaña de catálogos de Snowflake
+ 
+  ![image](https://github.com/user-attachments/assets/a26d2f87-1d4a-4d17-b38c-047adda51077)
+
+  Por el momento esta vacía, pero ya esta creada la tabla, la cual estaremos conformando luego de la conexión con snowflake.
+
+•	Luego pasamos a Airflow UI (localhost:8080) y hacemos click Admin y en la eventana emergente seleccionamos conexiones.
+
+  ![image](https://github.com/user-attachments/assets/5f0f695c-c2c4-49e8-ad85-29e9179e8b6b)
+
+ Y llenamos los datos solicitados.
+ 
+  ![image](https://github.com/user-attachments/assets/289f6001-5782-4b97-b867-46dbac5a7491)
+
+ Ahora vamos a la parte inferior izquierda de snowflake donde esta tu administrador de cuenta y hacemos click derecho y en la ventana emergente seleccionaremos Detalles de sección y hacemos click en copy to   clipboard para copiar el contexto de Snowflake.  
   
-![image]()
+  ![image](https://github.com/user-attachments/assets/a6deb62b-9a43-4606-8d31-1555cd012842)
 
-![image]()
+  Ahora pegamos ese código en el navegador y seleccionamos solo la parte resaltada de azul después de las dos barras(//) y antes del punto snowflake(.snowflake)
+  
+  ![image](https://github.com/user-attachments/assets/b9ebaf78-a5ae-4615-8b96-43c1e9a80800)
+
+  Luego volvemos a la página de Airflow y pasamos ese dato seleccionado anteriormente en la casilla de Account.
+
+  ![image](https://github.com/user-attachments/assets/e50251ca-8b99-4ee5-8a1a-f63d3f7a6d6e)
+
+  Ahora snowflake en la pestaña de compute verificamos que compute_wh este inicializado.
+
+  ![image](https://github.com/user-attachments/assets/716548b0-03f4-442b-a5a6-c1c8bbf523a1)
+
+  Continuamos completando los datos y luego le damos a guardar (save).
+
+  ![image](https://github.com/user-attachments/assets/662abfdd-c6a5-4435-bbc9-9f5cf263260f)
+
+  Ahora regresamos a nuestro VSC en la carpeta <mark>load_gold_to_snowflake</mark> y agregamos al final el siguiente código.
+
+  Código: [load_gold_to_snowflake.py]()
+
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
+   ![image]()
+
+    ![image]()
 
   ![image]()
 
-  ![image]()
+ ![image]()
 
-  ![image]()
+ ![image]()
 
-  ![image]()
-
-  ![image]()
-
-
-
-
-
-
+ ![image]()
 
 
 
