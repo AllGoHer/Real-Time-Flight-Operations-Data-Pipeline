@@ -268,28 +268,31 @@ codigo:
 
   ![image](https://github.com/user-attachments/assets/662abfdd-c6a5-4435-bbc9-9f5cf263260f)
 
-  Ahora regresamos a nuestro VSC en la carpeta <mark>load_gold_to_snowflake</mark> y agregamos al final el siguiente código.
+  Ahora regresamos a nuestro VSC en la carpeta <mark>load_gold_to_snowflake</mark> y agregamos al final el siguiente código para la Ejecución de MERGE (Upsert) a Snowflake.
 
-  Código: [load_gold_to_snowflake.py]()
+  Código: [load_gold_to_snowflake.py](https://github.com/AllGoHer/Real-Time-Flight-Operations-Data-Pipeline/blob/main/scripts/load_gold_to_snowflake.py)
 
-   ![image]()
+  * luego verificamos la conexión en Airflow.
+  
+   ![image](https://github.com/user-attachments/assets/dd204c1b-4452-4818-a063-173371fb9e93)
 
-   ![image]()
+   Y ahora en snowflake ya se puede ver la carga de los datos.
 
-   ![image]()
+   ![image](https://github.com/user-attachments/assets/713b24f9-71ee-42ee-8c4f-ef0b64254621)
 
-   ![image]()
+   ![image](https://github.com/user-attachments/assets/e08fc69e-db16-446a-876d-444ee6f1ebe1)
 
-    ![image]()
+   ![image](https://github.com/user-attachments/assets/2c98e600-5e13-457e-b4e8-abf219ceeeb0)
 
-  ![image]()
+   ![image](https://github.com/user-attachments/assets/21296e5d-f587-4687-9992-8cd5e55bb1c0)
 
- ![image]()
+  ![image](https://github.com/user-attachments/assets/51a52f04-c912-4202-a688-673ea8ed79a1)
 
- ![image]()
+  ![image](https://github.com/user-attachments/assets/91d759d0-8305-4341-b480-6bb7dc3f76ba)
 
- ![image]()
+  ![image](https://github.com/user-attachments/assets/1eee5e55-ef2f-4ec7-9eba-caccb8651d03)
 
+ 
 
 
 
