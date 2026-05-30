@@ -298,30 +298,30 @@ ________________________________________________________________________________
  
 ☑️**Hallazgo 1:** La asimetría absoluta del cielo (El monopolio estadounidense)
 
-**El dato:** Estados Unidos tiene casi 5,000 vuelos en una sola ventana de 30 minutos. El segundo lugar es Canadá con ~400. USA representa más del 60% del tráfico mundial monitoreado.
+* **El dato:** Estados Unidos tiene casi 5,000 vuelos en una sola ventana de 30 minutos. El segundo lugar es Canadá con ~400. USA representa más del 60% del tráfico mundial monitoreado.
   
-**Conclusión de negocio:** Cualquier anomalía (tormenta, fallo de sistema, cierre de espacio aéreo) en EE. UU. tiene un impacto causal desproporcional en las operaciones globales de aerolíneas. Es el nodo central de la red mundial.
+* **Conclusión de negocio:** Cualquier anomalía (tormenta, fallo de sistema, cierre de espacio aéreo) en EE. UU. tiene un impacto causal desproporcional en las operaciones globales de aerolíneas. Es el nodo      central de la red mundial.
 
   
-**Hallazgo 2:** "Operational Friction" (Fricción Operativa) en países específicos
+☑️**Hallazgo 2:** "Operational Friction" (Fricción Operativa) en países específicos
 
-**El dato:** Si miras países pequeños, Estonia tiene 8 vuelos y los 8 están en tierra (100%). Georgia tiene 2 vuelos y los 2 en tierra. Por el contrario, Egipto tiene 20 vuelos y 0 en tierra.
+* **El dato:** Si miras países pequeños, Estonia tiene 8 vuelos y los 8 están en tierra (100%). Georgia tiene 2 vuelos y los 2 en tierra. Por el contrario, Egipto tiene 20 vuelos y 0 en tierra.
 
-**Conclusión de negocio:** El KPI "Vuelos en Tierra" no significa que los aviones estén estacionados en un hangar por la noche; significa que están en pista, taxiendo o retenidos. Un 100% de Ground Ops en una ventana de tiempo sugiere cuellos de botella de despegue, congestión terminal o bloqueos meteorológicos locales.
-
-
-**Hallazgo 3:** La velocidad como proxy del tipo de tráfico (Hub vs. Origins)
-
-**El dato:** Egipto (~296 km/h avg), Arabia Saudita (~251 km/h avg) y Rusia (~257 km/h avg) tienen las velocidades más altas. Ecuador (~3 km/h avg), Italia (~224 km/h avg en la segunda ventana) y Portugal tienen las más bajas.
-
-**Conclusión de negocio:** Velocidades altas indican "Cruising" (vuelos de larga distancia, intercontinentales). Velocidades bajas indican aviones en fases de aproximación, espera (holding patterns) o vuelos regionales cortos. Esto permite clasificar aeropuertos implícitamente como Hubs de conexión vs. Origines/destinos finales.
+* **Conclusión de negocio:** El KPI "Vuelos en Tierra" no significa que los aviones estén estacionados en un hangar por la noche; significa que están en pista, taxiendo o retenidos. Un 100% de Ground Ops en      una ventana de tiempo sugiere cuellos de botella de despegue, congestión terminal o bloqueos meteorológicos locales.
 
 
-**Hallazgo 4:** Caída abrupta del tráfico global
+☑️**Hallazgo 3:** La velocidad como proxy del tipo de tráfico (Hub vs. Origins)
 
-**El dato:** Entre las 23:30 del día 28 y las 00:00 del día 29, el tráfico global cayó de ~8,400 aviones a ~7,900 aviones (-6% aprox).
+* **El dato:** Egipto (~296 km/h avg), Arabia Saudita (~251 km/h avg) y Rusia (~257 km/h avg) tienen las velocidades más altas. Ecuador (~3 km/h avg), Italia (~224 km/h avg en la segunda ventana) y Portugal      tienen las más bajas.
 
-**Conclusión de negocio:** Esto refleja el ritmo circadiano de la aviación comercial. A medida que Asia y Europa entran en sus horas nocturnas de menor actividad, la carga global disminuye, manteniendo el peso principalmente en América.
+* **Conclusión de negocio:** Velocidades altas indican "Cruising" (vuelos de larga distancia, intercontinentales). Velocidades bajas indican aviones en fases de aproximación, espera (holding patterns) o           vuelos regionales cortos. Esto permite clasificar aeropuertos implícitamente como Hubs de conexión vs. Origines/destinos finales.
+
+
+☑️**Hallazgo 4:** Caída abrupta del tráfico global
+
+* **El dato:** Entre las 23:30 del día 28 y las 00:00 del día 29, el tráfico global cayó de ~8,400 aviones a ~7,900 aviones (-6% aprox).
+
+* **Conclusión de negocio:** Esto refleja el ritmo circadiano de la aviación comercial. A medida que Asia y Europa entran en sus horas nocturnas de menor actividad, la carga global disminuye, manteniendo el       peso principalmente en América.
 
 
 
